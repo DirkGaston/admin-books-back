@@ -1,12 +1,15 @@
+const pool = require('../database');
 
-const list = () => {
-    return [
-        {
-            id: 1,
-            name: "test"
-        }
-    ]
-}
+const list = async () => {
+    try {
+        const consulta = "SELECT * FROM books";
+        const { rows: books } = await pool.query(consulta)
+        return books;
+    } catch (error) {
+        console.error("hubo un error al obtener los libros ", error);
+        return [];
+    }
+};
 
 module.exports = {
     list,
