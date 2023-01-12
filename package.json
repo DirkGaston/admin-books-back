@@ -1,0 +1,23 @@
+{
+  "name": "admin-books-back",
+  "version": "1.0.0",
+  "description": "aplicación backend utilizada para ayudantía de paso a producción",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fransafu/admin-books-back.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fransafu/admin-books-back/issues"
+  },
+  "homepage": "https://github.com/fransafu/admin-books-back#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
