@@ -1,10 +1,10 @@
 const { Pool } = require('pg');
 
-const DATABASE_HOST = process.env.DATABASE_HOST || '';
-const DATABASE_USER = process.env.DATABASE_USER || '';
-const DATABASE_PASSWORD = process.env.DATABASE_PASSWORD || '';
-const DATABASE_NAME = process.env.DATABASE_NAME || '';
-const DATABASE_PORT = process.env.DATABASE_PORT || '';
+const DATABASE_HOST = process.env.PGHOST || '';
+const DATABASE_USER = process.env.PGUSER || '';
+const DATABASE_PASSWORD = process.env.PGPASSWORD || '';
+const DATABASE_NAME = process.env.PGDATABASE || '';
+const DATABASE_PORT = process.env.PGPORT || '';
 
 const pool = new Pool({
     host: DATABASE_HOST,
