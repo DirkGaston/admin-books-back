@@ -44,7 +44,7 @@ const update = async (req, res) => {
   }
 };
 
-const delete = async (req, res) => {
+const remove = async (req, res) => {
   try {
     const { id } = req.params;
     await booksService.delete(id);
@@ -60,5 +60,5 @@ module.exports = {
   findOne,
   create,
   update,
-  delete,
+  remove,
 };
